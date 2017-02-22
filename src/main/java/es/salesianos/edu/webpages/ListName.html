@@ -1,0 +1,44 @@
+
+	
+	<!DOCTYPE html>
+<html>
+<style>
+		body {font-family: Arial, Helvetica, sans-serif;}
+
+		table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+		    font-size: 12px;  width: 480px; text-align: left;    border-collapse: collapse; }
+		
+		thead {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #b9c9fe;
+		    border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: #039; }
+		
+		td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid #fff;
+		    color: red;    border-top: 1px solid transparent; }
+		    </style>
+<head>
+</head>
+<body>
+
+	<div class="row">
+		<form wicket:id="formListAuthor" class="form-group">
+			<div>
+    <input wicket:id="name" class="form-control" placeholder="introduzca un nombre de un autor"></input> 
+     <input type="submit" class="btn btn-primary">
+	<input type="submit" wicket:id="okbutton" value="OK" />
+    <input type="submit" wicket:id="cancelbutton" value="Cancel" />
+			</div>
+		</form>
+	</div>
+
+	<div class="row">
+		<div class="alert-info" wicket:id="feedbackMessage">[feedbackMessage]</div>
+	</div>
+
+
+ <div wicket:id="author-group">
+		<span wicket:id="titleList"></span> ||	
+		<span wicket:id="isbnList"></span>||	
+		<span wicket:id="authorList"></span>
+	</div>
+
+</body>
+</html>
